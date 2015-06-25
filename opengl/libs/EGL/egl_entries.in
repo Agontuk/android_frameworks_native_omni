@@ -88,10 +88,10 @@ EGL_ENTRY(EGLBoolean, eglGpuPerfHintQCOM, EGLDisplay, EGLContext, EGLint *)
 
 #endif /* QCOM_HARDWARE */
 /* NVIDIA extensions */
-
+#ifndef STE_HARDWARE
 EGL_ENTRY(EGLuint64NV, eglGetSystemTimeFrequencyNV, void)
 EGL_ENTRY(EGLuint64NV, eglGetSystemTimeNV, void)
-
+#endif
 /* IMG extensions */
 
 EGL_ENTRY(EGLBoolean, eglHibernateProcessIMG, void)
